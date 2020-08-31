@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>Libations</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'drinkRecs/css/style.css' %}">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script></script>
+  </script>
+  
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="header">
+                <div class=" pull-right ">
+                        <a href="/" class="home">Home</a>
+    
+                </div>     
+            <img src="{{drink.strDrinkThumb}}">
+            <div class="heading-text"><h2 class="display-3">{{drink.strDrink}}</h2> </div>
+             
+        </div>
+            
+
+        <div id="main" class="main">
+            <div class="row">
+                <div class="col-sm" id="ingredients">
+                    <h3>Ingredients</h3>
+                    {%for ingredient in full_ingredients%}
+                    <p>{{loop.index}} {{ingredient}}</p>
+                    {%endfor%}
+                    <h3>Instructions</h3>
+                    {{drink.strInstructions}}
+                    <div>
+                    <a href="/find_similar/{{drink.idDrink}}" class="btn similar">Find_Similar</a>  
+                </div>
+                    </div>
+                    <div class="col-sm" id="recipes">
+                        <h3>Drink Recipes:</h3>
+                        {%for similar_drink in similar_drinks%}
+                        <div class="drink">
+                                <a href="/cocktail/{{similar_drink.idDrink}}"><img class="drink-pic" src="{{similar_drink.strDrinkThumb}}" ></a><a href="/cocktail/{{similar_drink.idDrink}}"><p id="onhover">{{similar_drink.strDrink}}</p></a>
+                        </div>
+                        {%endfor%}
+                
+                    </div>
+            </div>
+        </div>
+        </div>
+    <script>
+        
+        $('.primary option[value={{primary}}]').attr("selected","selected");
+        $('.other option[value={{other}}]').attr("selected","selected");
+
+    
+    </script>
+</body>
+</html>
