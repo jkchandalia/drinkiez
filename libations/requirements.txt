@@ -1,0 +1,6 @@
+Django
+numpy
+pandas
+requests
+urllib3
+gunicorn

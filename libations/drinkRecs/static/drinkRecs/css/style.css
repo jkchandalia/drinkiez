@@ -1,0 +1,264 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /* outline: 15px solid black; */
+    color: rgb(173, 131, 131);
+   }
+body {
+    font-family:Sans-Serif;
+  }
+#header, .column, .main{
+    background-color:rgb(48, 4, 23);
+     /* color: #972C00; */
+    
+}
+#header *{
+    display:inline-block;
+}
+.heading{
+    padding-top:1px;
+    margin-top:10px;
+    display:block;
+
+    
+}
+.primary, .other{
+    margin-top:20px;
+}
+.heading *{
+}
+h3{
+    vertical-align: center;
+    padding-top:5px;
+    margin-top:10px;
+}
+h1{
+    vertical-align: bottom;
+}
+#header{
+    width:100%;
+    min-height:135px;
+    /* margin-left:-20px; */
+    display:block;
+}
+.drink{
+    display: block;
+    margin:10px;
+    margin-right:20px;
+}
+.drink *{
+
+    display:inline-block;
+    margin-right:10px;
+}
+input{
+    max-width: 100px;
+    text-align: right;
+}
+
+    .drink-pic {
+        display:inline-block;    
+        max-width:75px;
+        max-height:75px;
+        width: auto;
+        height: auto;
+        /* height: 150px; */
+      }
+      img{
+          height:150px;
+      }
+    
+.all{
+    min-height:5000px;
+    color: blue;
+}
+
+
+.form-item{
+    display: block;
+}
+.multi-select{
+    display: block;
+}
+
+#logout{
+    text-align: right;
+    /* margin:20px; */
+    /* margin-left:600px; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:250px;
+    text-align: right;
+}
+
+.column{
+    outline: 5px solid black;
+    min-height:400px;
+    width:20%;
+    margin:4px;
+    padding:2px;
+}
+
+.main{
+    min-height:50px;
+    padding-top:5px;
+    border-top: solid 5px #972C00;
+}
+.center-element{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3{
+    font-size: 20pt;
+}
+
+.display-5{
+    
+    display: inline-block;
+    /* border-bottom: 5px solid black; */
+    /* color:lightskyblue; */
+    /* background-color:rgb(241, 239, 239); */
+    /* width:100%; */
+    margin:0px;
+    font-size:24pt;
+    padding:0px;
+}
+.acronym{
+    font-style: italic;
+}
+
+
+#resizable{
+    background-color: #3497DB;
+    /* rgb(48, 73, 155); */
+    height: 400px;
+    width:150px;
+    vertical-align: bottom;
+
+}
+
+h4{
+    display: inline-block;
+}
+
+.container-fluid{
+    width:100%;
+    padding:20px;
+    min-height:100px;
+}
+
+.main-nav *{
+    margin:10px;
+    vertical-align: middle;
+    font-size:11pt;
+    text-align: center;
+    color:white;
+}
+.row{
+    padding-right:50px;
+    padding-left:50px;
+    padding-bottom:50px;
+    padding-top:10px;
+}
+
+#call-put-label{
+    display: block;
+}
+
+#options-heading{
+    display: block;
+}
+
+
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+
+#header{
+    padding:10px;
+}
+.col-sm{
+    vertical-align: bottom;
+}
+#instructions{
+    display: block;
+}
+
+#update-button{
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+#margin-num{
+    display: inline-block;
+}
+li{
+    margin-left:60px;
+}
+#update-form input{
+    font-size:14px;
+}
+#update-form {
+    min-height:40px;
+}
+.similar{
+    min-width:160px;
+background-color: #972C00;
+border:1px black solid;
+margin-top:30px;
+margin-bottom:150px;
+color: rgb(216, 204, 204);
+text-align: center;
+padding-left:35px;
+}
+
+.home {padding-right:10px;
+    /* margin-left:450px; */
+    width:30px;
+color: #972C00;
+
+vertical-align: bottom;
+font-size:20px;
+}
+.pull-right{
+    text-align: right;
+    vertical-align: top;
+    display: block;
+    width:97%;
+}
+.btn{ padding-right:100px;
+    width:30px;
+background-color: #972C00;
+border:1px black solid;
+margin-top:30px;
+color: rgb(216, 204, 204);
+text-align: center;}
+
+.darkorange{
+    color:#972C00;
+}
+
+.heading-text{
+    vertical-align: bottom;
+}
