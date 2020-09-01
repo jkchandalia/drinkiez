@@ -26,7 +26,7 @@ df_dist=df_dist.set_index("drinkId")
 
 def find_distance(drink_id, df_distance):
     distances=[]
-    matrix=df_distance.as_matrix()
+    matrix=df_distance.to_numpy()
     index=list(df_distance.index).index(drink_id)
     for i in range(0,len(df_distance)):
         distances.append([list(df_distance.index)[i],np.linalg.norm(matrix[index,:]-matrix[i,:])])
