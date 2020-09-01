@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <title>Drinkiez</title>
+    <title>Libations</title>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'drinkRecs/css/style.css' %}">
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous"> -->
@@ -37,7 +37,7 @@
         <div id="header">
                 
             <img src="{% static 'drinkRecs/img/cocktail-logo.png' %}">
-            <div class="heading-text"><h2 class="display-3">Drinkiez... </h2> <div class="heading"><h3 >Cocktails crafted just for you</h3></div></div>
+            <div class="heading-text"><h2 class="display-3">Libations... </h2> <div class="heading"><h3 >Cocktails crafted just for you</h3></div></div>
 
         </div>
             
@@ -72,7 +72,7 @@
                           
                     </div>
                 <div class="col-sm" id="recipes">
-                    <h3>Drink Recipes:</h3>
+                    <h3>Recommendations:</h3>
                     {%for drink in drinks%}
                     <div class="drink">
                             <a href="/cocktail/{{drink.idDrink}}"><img class="drink-pic" src="{{drink.strDrinkThumb}}" ></a><a href="/cocktail/{{drink.idDrink}}"><p id="onhover">{{drink.strDrink}}</p></a>

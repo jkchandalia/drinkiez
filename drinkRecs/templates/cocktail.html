@@ -46,7 +46,7 @@
                 </div>
                     </div>
                     <div class="col-sm" id="recipes">
-                        <h3>Drink Recipes:</h3>
+                        <h3>Recommendations:</h3>
                         {%for similar_drink in similar_drinks%}
                         <div class="drink">
                                 <a href="/cocktail/{{similar_drink.idDrink}}"><img class="drink-pic" src="{{similar_drink.strDrinkThumb}}" ></a><a href="/cocktail/{{similar_drink.idDrink}}"><p id="onhover">{{similar_drink.strDrink}}</p></a>
