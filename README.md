@@ -13,3 +13,7 @@ Recommendations for new cocktails are made using a similarity score based on ove
 
 This application is packaged as two docker containers, one containing the Django web app, Gunicorn server and a lightweight database and the second containing the Nginx server. libations is deployed using Google Compute Engine and is accessible at http://libations.guru/. 
 
+To build and run the docker containers:
+
+>sudo docker-compose -f docker-compose.yml up -d --build
+
